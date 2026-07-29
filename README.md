@@ -52,6 +52,6 @@ chmod +x autoinstall-debian.sh
 ```bash
 git clone https://github.com/lordpipon/server-swaydots.git
 cd server-swaydots
-chmod +x autoinstall-debian.sh
-./autoinstall-debian.sh
+chmod +x autoinstall-arch.sh
+./autoinstall-arch.sh
 ```
