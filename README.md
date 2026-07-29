@@ -38,10 +38,20 @@ Minimal black Sway configuration made for lightweight servers/ server laptops.
 These dots were used on my laptop, the thinkpad E14 gen 3, and it contains the battery and bluetooth on the waybar.
 Tutorial how to remove the battery and other laptop features will be in removelaptopfeatures.md
 
-## Install (automatic)
+## Install on debian or ubuntu based distros (automatic)
 
 ```bash
 git clone https://github.com/lordpipon/server-swaydots.git
 cd server-swaydots
-chmod +x autoinstall.sh
-./autoinstall.sh
+chmod +x autoinstall-debian.sh
+./autoinstall-debian.sh
+```
+
+## Install on arch based distros (automatic)
+
+```bash
+git clone https://github.com/lordpipon/server-swaydots.git
+cd server-swaydots
+chmod +x autoinstall-debian.sh
+./autoinstall-debian.sh
+```
