@@ -1,0 +1,105 @@
+### Minimal Server Sway ###
+
+set $mod Mod4
+set $term foot
+
+# Start apps
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+exec xdg-desktop-portal-wlr
+exec waybar
+exec swaybg -c '#000000'
+exec nm-applet
+exec blueman-applet
+exec /usr/lib/polkit-kde-authentication-agent-1
+exec brightnessctl set 100%
+
+
+# Terminal
+bindsym $mod+Return exec $term
+
+# Browser
+bindsym $mod+w exec firefox-esr
+
+# File manager
+bindsym $mod+e exec dolphin
+
+# App launcher
+bindsym $mod+space exec fuzzel
+
+# Close window
+bindsym $mod+q kill
+
+# Launcher
+bindsym $mod+d exec fuzzel
+
+# Lock
+bindsym $mod+l exec swaylock -c 000000
+
+# Exit sway
+bindsym $mod+Shift+e exit
+
+# Reload config
+bindsym $mod+Shift+c reload
+
+# Workspaces
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+
+# Focus windows
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# Move windows
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# Floating
+bindsym $mod+Shift+space floating toggle
+
+# Layout
+default_border pixel 2
+
+# Make everything floating
+# for_window [class=".*"] floating enable
+
+# Allow moving floating windows
+floating_modifier $mod
+
+# Better tiling feel
+default_orientation auto
+
+# New windows appear on top instead of weird splits
+focus_follows_mouse yes
+
+# Smart gaps
+gaps inner 8
+gaps outer 8
+
+input * {
+    xkb_layout cz
+}
+
+input "type:pointer" {
+    pointer_accel -0.5
+}
+
+
+# Volume controls
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+# Media keys
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
