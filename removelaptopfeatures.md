@@ -14,3 +14,20 @@ Remove desktop battery warnings:
 
 ```bash
 sudo apt remove power-profiles-daemon upower
+```
+
+## Remove battery indicator from waybar
+Find ur waybar config with `nano`
+
+Find:
+    "modules-center": [
+        "cpu",
+        "memory",
+        "disk",
+        "network",
+        "battery",
+        "custom/uptime"
+    ],
+
+Remove "battery,
+Save, exit and restart waybar
