@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Sync dotfiles content into the book
-        run: ./docs/scripts/sync.sh
+        run: bash ./docs/scripts/sync.sh
 
       - name: Install mdBook
         uses: peaceiris/actions-mdbook@v2
