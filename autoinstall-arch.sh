@@ -23,7 +23,8 @@ brightnessctl \
 xdg-desktop-portal-wlr \
 pipewire \
 wireplumber \
-blueman
+blueman \
+zsh
 
 mkdir -p ~/.config
 
