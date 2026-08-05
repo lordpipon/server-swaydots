@@ -15,6 +15,13 @@ Minimal black Sway configuration made for lightweight servers/ server laptops.
 - Bluetooth support
 - Minimal dark theme
 
+## What you can and should change
+In ~/.config/sway/config there is a comment # kb layout, default is **us** if u want for example czech keyboard u change **us** to **cz** or other. Mouse acceleration is off by default and the speed is set by me, u can set it however u want and on top there there is a line that says something waybar right should say like battery, or something, if ur a desktop user u can remove it.
+
+## Reloading Sway
+SUPER + SHIFT + E  - Log out to login manager
+`sway reload` (in terminal) Reloads sway in sway.
+
 ## Required packages
 
 - sway
