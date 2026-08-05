@@ -23,7 +23,8 @@ brightnessctl \
 xdg-desktop-portal-wlr \
 pipewire \
 wireplumber \
-blueman
+blueman \
+zsh
 
 echo "Installing configs..."
 
