@@ -12,7 +12,7 @@
         "memory",
         "disk",
         "network",
-        "battery",
+        "battery",  # remove for desktop
         "custom/uptime"
     ],
 
