@@ -1,6 +1,8 @@
 # Server Sway Dots
 
-Minimal black Sway configuration made for lightweight servers/ server laptops.
+Minimal black Sway configuration made for servers/server laptops.
+
+I don't recommend using it for normal use, but it's still really lightweight and minimal ram usage.
 
 ## Features
 
