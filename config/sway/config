@@ -86,11 +86,11 @@ gaps inner 8
 gaps outer 8
 
 input * {
-    xkb_layout cz
+    xkb_layout us # kb layout
 }
 
 input "type:pointer" {
-    pointer_accel -0.5
+    pointer_accel -0.5 # mouse speed
 }
 
 
