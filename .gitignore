@@ -1,0 +1,8 @@
+# mdBook build output
+/docs/book/
+
+# Files generated at build time by docs/scripts/sync.sh
+/docs/src/README.md
+/docs/src/controls.md
+/docs/src/removelaptopfeatures.md
+/docs/src/config/
