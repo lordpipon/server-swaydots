@@ -42,6 +42,7 @@ SUPER + SHIFT + E  - Log out to login manager
 - pipewire
 - wireplumber
 - blueman
+- zsh
 
 ## Warning
 These dots were used on my laptop, the thinkpad E14 gen 3, and it contains the battery and bluetooth on the waybar.
