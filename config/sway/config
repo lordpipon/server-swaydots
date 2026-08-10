@@ -86,7 +86,7 @@ gaps inner 8
 gaps outer 8
 
 input * {
-    xkb_layout us # kb layout
+    xkb_layout us
 }
 
 input "type:pointer" {
